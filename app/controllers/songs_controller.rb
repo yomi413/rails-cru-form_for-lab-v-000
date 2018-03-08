@@ -5,6 +5,9 @@ class SongsController < ApplicationController
     @artist = Artist.find(params[:id])
   end
 
+  def new
+  end
+
   private
     def song_params(*args)
       params.require(:song).permit(*args)
